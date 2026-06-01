@@ -38,29 +38,38 @@ NumPy. Just **Runtime → Run all** afterward.
 
 ## Option B — Local, with [pixi](https://pixi.sh) (recommended for offline use)
 
-[pixi](https://pixi.sh/latest/#installation) installs a self-contained
-environment (compiler, GSL, LAPACK, Python, Jupyter) — no conda/brew/apt needed.
+[pixi](https://pixi.sh) builds a self-contained environment (compiler, GSL,
+LAPACK, Python 3.12, Jupyter) — no conda/brew/apt and no system libraries to
+install yourself.
+
+**1. Install pixi** (once — it's a single self-contained binary):
+
+```bash
+# macOS / Linux
+curl -fsSL https://pixi.sh/install.sh | sh
+```
+```powershell
+# Windows (PowerShell)
+iwr -useb https://pixi.sh/install.ps1 | iex
+```
+
+…or `brew install pixi`. It installs to `~/.pixi/bin` — **open a new terminal**
+afterward so it's on your `PATH`. (Details: <https://pixi.sh/latest/#installation>.)
+
+**2. Run the tutorial:**
 
 ```bash
 git clone https://github.com/stephengreen/DirtyEMRI-tutorial.git
 cd DirtyEMRI-tutorial
-pixi run lab        # builds the fork (once) and opens the notebook in JupyterLab
+pixi run lab        # builds the fork (once) and opens it in JupyterLab
 ```
 
-That's it. To just verify the environment builds and the notebook runs end-to-end:
+On first run, pixi downloads everything into a local `.pixi/` folder — give it a
+couple of minutes. To instead just check it all builds and the notebook runs
+end-to-end:
 
 ```bash
 pixi run verify
-```
-
-## Option C — Local, with your own conda/mamba
-
-```bash
-conda create -n few_tut -c conda-forge python=3.9 "numpy<2" "cython<3" scipy \
-    gsl=2.7 lapack liblapacke openblas hdf5 h5py requests tqdm matplotlib jupyterlab
-conda activate few_tut
-python build_few.py
-jupyter lab Playground_KerrCircularAccretion.ipynb
 ```
 
 ---
