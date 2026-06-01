@@ -18,17 +18,17 @@ vendored `FastEMRIWaveforms/` fork here — it is *not* in the public PyPI
 
 1. Open the notebook in Colab (the **"Open in Colab"** badge above, or the one at
    the top of the notebook).
-2. Run the **first code cell**. It installs `conda` and then **restarts the
-   runtime — this is expected and normal.**
+2. Run the **first code cell**. It installs the dependencies and then **restarts
+   the runtime — this is expected and normal.**
 3. After the restart, choose **Runtime → Run all.**
 
-Setup picks up automatically: it installs the tested dependencies (via conda, so
-the right GSL/HDF5 are used) and builds the fork — ~2-3 minutes the first time,
-then the physics cells just run.
+The second cell builds the fork (~2-3 minutes the first time) and then the physics
+cells just run.
 
-> Why conda on Colab? The fork needs GSL < 2.8 and a specific NumPy/Cython, which
-> conflict with Colab's stock Python. `condacolab` gives an isolated, known-good
-> environment — hence the one-time restart.
+> Why the restart? The fork needs `numpy < 2`, and downgrading NumPy inside a live
+> kernel corrupts it — so we install everything, restart once for a clean NumPy,
+> then build against Colab's own Python. (Colab's Ubuntu already ships GSL 2.7, the
+> version the fork needs.)
 
 ## Option B — Local, with [pixi](https://pixi.sh) (recommended for offline use)
 
