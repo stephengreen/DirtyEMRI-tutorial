@@ -25,6 +25,12 @@ vendored `FastEMRIWaveforms/` fork here — it is *not* in the public PyPI
 The second cell builds the fork (~2-3 minutes the first time) and then the physics
 cells just run.
 
+**Two things during setup look alarming but are normal:** (1) a block of red
+`ERROR: pip's dependency resolver...` text about NumPy — harmless, it's just
+Colab's other packages; the install succeeded. (2) The runtime **restarts** after
+the first cell (possibly shown as *"session crashed"*) — intentional, for a clean
+NumPy. Just **Runtime → Run all** afterward.
+
 > Why the restart? The fork needs `numpy < 2`, and downgrading NumPy inside a live
 > kernel corrupts it — so we install everything, restart once for a clean NumPy,
 > then build against Colab's own Python. (Colab's Ubuntu already ships GSL 2.7, the
