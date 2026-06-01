@@ -1,0 +1,38 @@
+[project]
+name = "dirtyemri-tutorial"
+description = "Kerr circular EMRIs in accretion disks — tutorial (KerrCircFlux / FastEMRIWaveforms)"
+channels = ["conda-forge"]
+platforms = ["osx-arm64", "osx-64", "linux-64"]
+
+# These are the exact dependencies the custom FastEMRIWaveforms fork needs to
+# build and run. The pins matter:
+#   * gsl <2.8   -> GSL 2.8 rewrote the B-spline API the fork uses (build fails on 2.8)
+#   * numpy <2   -> the 2022-era Cython/C++ was written against the NumPy 1.x C API
+#   * cython <3  -> matches the .pyx sources
+# openblas is what actually ships the lapacke.h header on conda-forge.
+[dependencies]
+python = "3.9.*"
+numpy = "<2"
+cython = "<3"
+scipy = "*"
+gsl = "2.7.*"
+lapack = "*"
+liblapacke = "*"
+openblas = "*"
+hdf5 = "*"
+h5py = "*"
+requests = "*"
+tqdm = "*"
+matplotlib-base = "*"
+jupyterlab = "*"
+ipympl = "*"
+setuptools = "*"
+wheel = "*"
+
+[tasks]
+# Compile the fork in place + register `few` (idempotent; fast after first run).
+build = "python build_few.py"
+# Launch JupyterLab on the tutorial notebook (builds first if needed).
+lab = { cmd = "jupyter lab Playground_KerrCircularAccretion.ipynb", depends-on = ["build"] }
+# Run the whole notebook headless to verify the environment end-to-end.
+verify = { cmd = "jupyter nbconvert --to notebook --execute --ExecutePreprocessor.timeout=600 --output _verify_run.ipynb Playground_KerrCircularAccretion.ipynb", depends-on = ["build"] }
