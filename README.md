@@ -1,5 +1,7 @@
 # Kerr Circular EMRIs in Accretion Disks — Tutorial
 
+[![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/stephengreen/DirtyEMRI-tutorial/blob/main/Playground_KerrCircularAccretion.ipynb)
+
 A slimmed-down, ready-to-run version of the **DirtyEMRI** playground for modelling
 Extreme Mass Ratio Inspirals (EMRIs) of compact objects on circular Kerr orbits
 embedded in an accretion disk. Everything you need to run
@@ -27,7 +29,7 @@ fork. It takes ~2 minutes the first time, then the physics cells just run.
 environment (compiler, GSL, LAPACK, Python, Jupyter) — no conda/brew/apt needed.
 
 ```bash
-git clone https://github.com/USER/DirtyEMRI-tutorial.git
+git clone https://github.com/stephengreen/DirtyEMRI-tutorial.git
 cd DirtyEMRI-tutorial
 pixi run lab        # builds the fork (once) and opens the notebook in JupyterLab
 ```
@@ -65,11 +67,12 @@ install. They are all handled for you above, but for the record:
 No internet/Zenodo download is needed at runtime — the `KerrCircFlux` model reads
 two small data tables already included in `FastEMRIWaveforms/few/files/`.
 
-## Setting your repo URL
+## Forking
 
-Two placeholders say `USER` — update them to your GitHub repo so Colab works:
-- the badge link in `README.md` and at the top of the notebook,
-- `REPO_URL` in the notebook's first (setup) cell.
+The Colab badge and the notebook's `REPO_URL` point at
+`github.com/stephengreen/DirtyEMRI-tutorial`. If you fork or rename the repo,
+update those two spots (the badge at the top of the notebook / this README, and
+`REPO_URL` in the notebook's first cell) to your own URL.
 
 ## What's inside
 
