@@ -126,14 +126,15 @@ DirtyEMRI-tutorial/
 
 The DirtyEMRI tutorial — the physics, the custom `KerrCircFlux` accretion-disk
 trajectory, and the [`Playground_KerrCircularAccretion.ipynb`](Playground_KerrCircularAccretion.ipynb)
-notebook — was created by **[Lorenzo Speri](https://github.com/lorenzsp)**. It
-builds on the [Fast EMRI Waveforms (FEW)](https://github.com/BlackHolePerturbationToolkit/FastEMRIWaveforms)
+notebook — was created by **[Lorenzo Speri](https://github.com/lorenzsp)**, with
+tutorial revisions and the homework exercises by **Laura Sberna**. It builds on
+the [Fast EMRI Waveforms (FEW)](https://github.com/BlackHolePerturbationToolkit/FastEMRIWaveforms)
 framework by Michael Katz, Alvin Chua, Niels Warburton, Scott Hughes, and the
 FEW developers.
 
-This repository only repackages Lorenzo's tutorial to run out-of-the-box
-(the cross-platform build, the pixi setup, and the self-configuring Colab cells)
-— Stephen Green. All of the science is Lorenzo's.
+This repository repackages their tutorial to run out-of-the-box (the
+cross-platform build, the pixi setup, and the self-configuring Colab cells)
+— Stephen Green. The science is Lorenzo's and Laura's.
 
 ## License
 

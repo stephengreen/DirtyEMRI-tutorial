@@ -24,11 +24,13 @@ apply to the snapshot bundled here.
 DirtyEMRI — the tutorial itself
 -------------------------------
 Copyright (C) 2023-2024 Lorenzo Speri
+Copyright (C) 2026 Laura Sberna
 
 Lorenzo Speri created the DirtyEMRI tutorial: the physics, the custom
 `KerrCircFlux` trajectory (Kerr circular orbits with an accretion-disk torque,
 FastEMRIWaveforms/src/ode_base_example.cc, wired into the FEW trajectory
-module), and the notebook Playground_KerrCircularAccretion.ipynb.
+module), and the notebook Playground_KerrCircularAccretion.ipynb. Laura Sberna
+revised and expanded the tutorial notebook and added the homework exercises.
 
 These additions originated in Lorenzo's "DirtyEMRI" package, which was
 distributed without an explicit license. They are derivative works of GPLv3
