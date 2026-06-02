@@ -74,6 +74,19 @@ pixi run verify
 
 ---
 
+## Option C — Local, with your own conda / mamba
+
+If you already use conda or mamba and would rather manage the environment
+yourself:
+
+```bash
+conda create -n few_tut -c conda-forge python=3.12 "numpy<2" "cython<3" scipy \
+    gsl=2.7 lapack liblapacke openblas hdf5 h5py requests tqdm matplotlib jupyterlab
+conda activate few_tut
+python build_few.py        # compiles the fork against this env + registers `few`
+jupyter lab Playground_KerrCircularAccretion.ipynb
+```
+
 ## Why these specific versions? (the install gotchas)
 
 This fork is from ~2022 and has a few hard requirements that trip up a naive
