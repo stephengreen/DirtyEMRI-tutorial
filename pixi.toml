@@ -11,7 +11,7 @@ platforms = ["osx-arm64", "osx-64", "linux-64"]
 #   * cython <3  -> matches the .pyx sources
 # openblas is what actually ships the lapacke.h header on conda-forge.
 [dependencies]
-python = "3.9.*"
+python = "3.12.*"
 numpy = "<2"
 cython = "<3"
 scipy = "*"
