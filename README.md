@@ -117,5 +117,33 @@ DirtyEMRI-tutorial/
 ├── FastEMRIWaveforms/                        the custom FEW fork (KerrCircFlux)
 ├── build_few.py                              cross-platform build (conda/pixi or Colab)
 ├── pixi.toml                                 local one-command setup
+├── LICENSE                                   GNU General Public License v3
+├── COPYRIGHT                                 authorship & attribution
 └── README.md
 ```
+
+## Credits
+
+The DirtyEMRI tutorial — the physics, the custom `KerrCircFlux` accretion-disk
+trajectory, and the [`Playground_KerrCircularAccretion.ipynb`](Playground_KerrCircularAccretion.ipynb)
+notebook — was created by **[Lorenzo Speri](https://github.com/lorenzsp)**. It
+builds on the [Fast EMRI Waveforms (FEW)](https://github.com/BlackHolePerturbationToolkit/FastEMRIWaveforms)
+framework by Michael Katz, Alvin Chua, Niels Warburton, Scott Hughes, and the
+FEW developers.
+
+This repository only repackages Lorenzo's tutorial to run out-of-the-box
+(the cross-platform build, the pixi setup, and the self-configuring Colab cells)
+— Stephen Green. All of the science is Lorenzo's.
+
+## License
+
+This project is licensed under the **GNU General Public License v3** — see
+[`LICENSE`](LICENSE) for the full text and [`COPYRIGHT`](COPYRIGHT) for
+authorship and attribution.
+
+The bundled `FastEMRIWaveforms/` fork was taken from FEW 1.x in 2023, when FEW
+was GPLv3. (Upstream FEW [relicensed to MIT in February 2025](https://github.com/BlackHolePerturbationToolkit/FastEMRIWaveforms/blob/master/LICENSE),
+after this fork was made, so that newer MIT license does not apply to the
+snapshot here.) The fork also includes third-party GPLv3 code (Tensor Product
+Interpolation, © Michael Pürrer & Jonathan Blackman), so the repository as a
+whole is distributed under the GPLv3.

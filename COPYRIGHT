@@ -1,0 +1,60 @@
+DirtyEMRI-tutorial — Copyright and Attribution
+==============================================
+
+This repository is licensed under the GNU General Public License, version 3
+(or, at your option, any later version). The full text is in the LICENSE file.
+
+It is a derivative of, and bundles, several works. Their authorship — and the
+reason the whole is distributed under the GPL — is recorded below.
+
+
+Fast EMRI Waveforms (FEW) — the vendored fork in FastEMRIWaveforms/
+-------------------------------------------------------------------
+Copyright (C) 2020 Michael L. Katz, Alvin J. K. Chua, Niels Warburton,
+                   Scott A. Hughes, and the FEW developers
+https://github.com/BlackHolePerturbationToolkit/FastEMRIWaveforms
+
+This fork was taken from FEW 1.x in 2023, when FEW was licensed under the GNU
+General Public License v3 (the per-file headers throughout FastEMRIWaveforms/
+reflect this). Upstream FEW relicensed to MIT on 2025-02-25, alongside a major
+2.x refactor — *after* this fork was made — so that MIT relicense does not
+apply to the snapshot bundled here.
+
+
+DirtyEMRI — the tutorial itself
+-------------------------------
+Copyright (C) 2023-2024 Lorenzo Speri
+
+Lorenzo Speri created the DirtyEMRI tutorial: the physics, the custom
+`KerrCircFlux` trajectory (Kerr circular orbits with an accretion-disk torque,
+FastEMRIWaveforms/src/ode_base_example.cc, wired into the FEW trajectory
+module), and the notebook Playground_KerrCircularAccretion.ipynb.
+
+These additions originated in Lorenzo's "DirtyEMRI" package, which was
+distributed without an explicit license. They are derivative works of GPLv3
+FEW and are included here, with attribution, under the GNU General Public
+License v3.
+
+
+Tensor Product Interpolation (TPI) — third-party, bundled but not built
+-----------------------------------------------------------------------
+Copyright (C) 2017, 2022 Michael Pürrer, Jonathan Blackman
+  FastEMRIWaveforms/src/TensorProductInterpolation.c
+  FastEMRIWaveforms/include/TensorProductInterpolation.h
+  FastEMRIWaveforms/src/TPI.pyx, FastEMRIWaveforms/src/TPI.c
+
+TPI is independent third-party code licensed under the GNU General Public
+License v3. It is present in the source tree but commented out of the build
+(FastEMRIWaveforms/setup.py) and is not imported or used by the tutorial.
+Because no contributor here holds its copyright, it cannot be relicensed; its
+presence is one further reason the repository as a whole is GPLv3.
+
+
+Tutorial packaging
+------------------
+Copyright (C) 2026 Stephen Green
+
+The cross-platform build and install tooling that makes the tutorial run
+out-of-the-box (build_few.py, pixi.toml, the self-configuring Colab setup, and
+this repository's slimmed-down layout), under the same GNU General Public
+License v3. The physics and the notebook are Lorenzo Speri's work, above.
