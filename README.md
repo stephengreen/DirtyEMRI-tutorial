@@ -1,4 +1,22 @@
-# Kerr Circular EMRIs in Accretion Disks — Tutorial
+# Kerr Circular EMRIs in Accretion Disks — new Tutorial
+
+The newest version of this tutorial can be found in the notebook 
+[Trajectory_tutorial_environments.ipynb](Trajectory_tutorial_environments.ipynb).
+The notebook uses the latest version of FastEMRIWaveforms and customizes the trajectory 
+ODE to account for interactions with the environment.
+
+## Option A — Conda environment
+
+Before using the notebook, create the following conda environment from your terminal:
+
+```bash
+conda env create -f few_tut_new.yml
+conda activate few_tut_new
+python -m ipykernel install --user --name few_tut_new --display-name "Python (few_tut_new)"
+jupyter lab Trajectory_tutorial_environments.ipynb
+```
+
+# Kerr Circular EMRIs in Accretion Disks — old Tutorial
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/stephengreen/DirtyEMRI-tutorial/blob/main/Playground_KerrCircularAccretion.ipynb)
 

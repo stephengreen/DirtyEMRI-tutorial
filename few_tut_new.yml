@@ -1,0 +1,22 @@
+name: few_tut_new
+channels:
+  - conda-forge
+dependencies:
+  - python=3.10
+  - numpy
+  - scipy
+  - matplotlib
+  - jupyter
+  - ipykernel
+  - pip
+  - notebook
+  - pandas
+  - seaborn
+  - cython
+  - numba
+  - scikit-learn
+  - tqdm
+  - pip:
+    - pastamarkers
+    - fastemriwaveforms
+    - lisaanalysistools
