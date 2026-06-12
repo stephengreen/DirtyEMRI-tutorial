@@ -16,6 +16,10 @@ python -m ipykernel install --user --name few_tut_new --display-name "Python (fe
 jupyter lab Trajectory_tutorial_environments.ipynb
 ```
 
+## Citation
+
+When using FEW, please cite the references at this [link](https://github.com/BlackHolePerturbationToolkit/FastEMRIWaveforms/blob/master/PAPERS.bib) and the FEW software at [Zenodo](https://zenodo.org/records/3969004).
+
 ## Credits
 
 The Trajectory_tutorial_environments tutorial
