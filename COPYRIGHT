@@ -41,7 +41,7 @@ This repository also includes the tutorial notebook `Trajectory_tutorial_environ
 Trajectory_tutorial_environments.ipynb: Copyright (C) 2026 Laura Sberna.
 Authorship: Laura Sberna (2026) — revised and expanded the tutorial material
 contained in this notebook and integrated it into the DirtyEMRI tutorial.
-The tutorial is built upon This tutorial is based on https://github.com/BlackHolePerturbationToolkit/FastEMRIWaveforms/blob/master/examples/Trajectory_tutorial.ipynb by Christian Chapman-Bird, Lorenzo Speri and Maxime Pigou and https://github.com/BlackHolePerturbationToolkit/FastEMRIWaveforms/blob/master/examples/Tutorial_FrequencyDomain_Waveforms.ipynb by Michael Katz and Christian Chapman-Bird.
+The tutorial is built upon This tutorial is based on https://github.com/BlackHolePerturbationToolkit/FastEMRIWaveforms/blob/master/examples/Trajectory_tutorial.ipynb by Christian Chapman-Bird, Lorenzo Speri and Maxime Pigou and https://github.com/BlackHolePerturbationToolkit/FastEMRIWaveforms/blob/master/examples/Tutorial_FrequencyDomain_Waveforms.ipynb by Michael Katz and Lorenzo Speri.
 
 
 Tensor Product Interpolation (TPI) — third-party, bundled but not built

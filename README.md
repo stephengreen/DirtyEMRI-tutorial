@@ -16,6 +16,27 @@ python -m ipykernel install --user --name few_tut_new --display-name "Python (fe
 jupyter lab Trajectory_tutorial_environments.ipynb
 ```
 
+## Credits
+
+The Trajectory_tutorial_environments tutorial
+is based on the [Trajectory_tutorial](https://github.com/BlackHolePerturbationToolkit/FastEMRIWaveforms/blob/master/examples/Trajectory_tutorial.ipynb) by Christian Chapman-Bird, Lorenzo Speri and Maxime Pigou and the [Tutorial_FrequencyDomain_Waveforms](https://github.com/BlackHolePerturbationToolkit/FastEMRIWaveforms/blob/master/examples/Tutorial_FrequencyDomain_Waveforms.ipynb) by Michael Katz and Lorenzo Speri, with tutorial revisions and the homework exercises by **Laura Sberna**. It builds on
+the [Fast EMRI Waveforms (FEW)](https://github.com/BlackHolePerturbationToolkit/FastEMRIWaveforms)
+framework by Michael Katz, Alvin Chua, Niels Warburton, Scott Hughes, and other
+FEW developers.
+
+## License
+
+This project is licensed under the **GNU General Public License v3** — see
+[`LICENSE`](LICENSE) for the full text and [`COPYRIGHT`](COPYRIGHT) for
+authorship and attribution.
+
+The bundled `FastEMRIWaveforms/` fork was taken from FEW 1.x in 2023, when FEW
+was GPLv3. (Upstream FEW [relicensed to MIT in February 2025](https://github.com/BlackHolePerturbationToolkit/FastEMRIWaveforms/blob/master/LICENSE),
+after this fork was made, so that newer MIT license does not apply to the
+snapshot here.) The fork also includes third-party GPLv3 code (Tensor Product
+Interpolation, © Michael Pürrer & Jonathan Blackman), so the repository as a
+whole is distributed under the GPLv3.
+
 # Kerr Circular EMRIs in Accretion Disks — old Tutorial
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/github/stephengreen/DirtyEMRI-tutorial/blob/main/Playground_KerrCircularAccretion.ipynb)
