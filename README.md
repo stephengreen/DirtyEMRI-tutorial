@@ -5,6 +5,8 @@ The newest version of this tutorial can be found in the notebook
 The notebook uses the latest version of FastEMRIWaveforms and customizes the trajectory 
 ODE to account for interactions with the environment.
 
+To start, clone the repository on your laptop.
+
 ## Option A — Conda environment
 
 Before using the notebook, create the following conda environment from your terminal:
