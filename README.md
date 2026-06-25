@@ -16,8 +16,6 @@ To get any updates, run
 git pull
 ```
 
-## Option A — Conda environment
-
 Before using the notebook, create the following conda environment from your terminal:
 
 ```bash
