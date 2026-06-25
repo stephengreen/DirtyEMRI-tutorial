@@ -5,7 +5,16 @@ The newest version of this tutorial can be found in the notebook
 The notebook uses the latest version of FastEMRIWaveforms and customizes the trajectory 
 ODE to account for interactions with the environment.
 
-To start, clone the repository on your laptop.
+To start, clone the repository on your laptop by running the following lines in your terminal:
+```bash
+git clone git@github.com:stephengreen/DirtyEMRI-tutorial.git
+cd DirtyEMRI-tutorial
+```
+
+To get any updates, run
+```bash
+git pull
+```
 
 ## Option A — Conda environment
 
